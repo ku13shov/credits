@@ -7,6 +7,7 @@
    body {
        background-color: #f5f5f5;
        font-family: sans-serif;
+       background: linear-gradient(45deg, #fcce9e, #ffeca8);
    }
    .main-container {
        max-width: 1340px;
@@ -38,12 +39,11 @@
    }
 
    .section-1__banner {
-        height: 300px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(banner.jpg);
         margin-bottom: 50px;
+   }
+   .section-1__banner-img {
+       max-width: 1340px;
+       width: 100%;
    }
    .section-1__title {
        text-align: center;
@@ -76,6 +76,7 @@
    .section-2__items {
        display: flex;
        flex-wrap: wrap;
+       justify-content: center;
        margin-bottom: 50px;
    }
    .section-2__item {
@@ -97,6 +98,7 @@
    .section-3__items {
        display: flex;
        flex-wrap: wrap;
+       justify-content: center;
        margin-bottom: 30px;
    }
    .section-3__item {
@@ -110,7 +112,6 @@
    }
    .section-3__item-img {
        width: 220px;
-       border-radius: 10px;
        margin-bottom: -10px;
    }
    .belweb {
@@ -120,6 +121,8 @@
    }
    .section-3__item-text {
        font-size: 18px;
+       color: #9e9e9e;
+       font-weight: 600;
    }
    .section-4__items {
        display: flex;
@@ -143,6 +146,8 @@
    }
    .section-4__item-text {
        font-size: 18px;
+       color: #9e9e9e;
+       font-weight: 600;
    }
    .section-2,
    .section-3,
@@ -180,6 +185,9 @@
        width: 100px;
        margin-bottom: 20px;
    }
+   .section-5 {
+       margin-bottom: 40px;
+   }
    .section-5__box {
        display: flex;
    }
@@ -190,14 +198,96 @@
    }
    .section-5__text {
        line-height: 20px;
-       margin-bottom: 5px;
+       margin-bottom: 10px;
+       max-width: 600px;
+       width: 100%;
+   }
+   @media (max-width: 680px) {
+        .section-1__banner {
+            margin-bottom: 30px;
+        }
+        .section-1__title {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .section-1__btn {
+            font-size: 18px;
+            height: 65px;
+            width: 150px;
+        }
+        .section-1__btns {
+            margin-bottom: 30px;
+        }
+        .section-2__item {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .section-2__item-img {
+            margin-bottom: 10px;
+        }
+        .section-2__item-text {
+            font-size: 16px;
+        }
+        .section-2__items {
+            margin-bottom: 10px;
+        }
+        .section-3__items {
+            margin-bottom: 10px;
+        }
+        .section-3__item {
+            width: 220px;
+            margin: 0 10px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+        }
+        .section-3__item-img {
+            width: 200px;
+        }
+        .section-3__item-text {
+            font-size: 16px;
+        }
+        .belweb {
+            width: 95px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .section-4__items {
+            margin-bottom: 20px;
+        }
+        .section-4__item {
+            width: 220px;
+            margin-bottom: 10px;
+            padding-bottom: 15px;
+        }
+        .section-4__item-text {
+            font-size: 16px;
+        }
+        .section-4__how {
+            margin-bottom: 30px;
+        }
+        .section-4__how-title {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .section-4__how-text-top {
+            margin-bottom: 15px;
+        }
+        .section-4__how-img {
+            margin-bottom: 15px;
+        }
+        .section-4__how-item {
+            width: 223px;
+            padding: 0 5px;
+            margin: 0 10px 15px;
+        }
+
    }
 </style>
 
 <section class="section-1">
    <div class="main-container">
        <div class="section-1__banner">
-          
+          <img class="section-1__banner-img" src="banner.jpg" alt="banner">
        </div>
        <h3 class="section-1__title">
             Мы работаем с разными банками
@@ -371,7 +461,7 @@
 <section class="section-5">
     <div class="main-container">
         <p class="section-5__text">
-            При покупке в рассрочку, по картам рассрочек или в кредит
+            При покупке в рассрочку, по картам рассрочек или в кредит:
         </p>
         <div class="section-5__box">
             <img class="section-5__box-img" src="text-icon-color.png" alt="">
